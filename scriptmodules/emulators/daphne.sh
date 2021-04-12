@@ -27,7 +27,7 @@ function depends_daphne() {
 
 function sources_daphne() {
 		if uname -m |grep "x86_64"; then
-	gitPullOrClone "$md_build" https://github.com/MrCoolSpan/Daphne.git
+	gitPullOrClone "$md_build" https://github.com/sgargallo/daphne-emu-x86.git
 	else
 	gitPullOrClone "$md_build" https://github.com/RetroPie/daphne-emu.git retropie
 	fi
