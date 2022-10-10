@@ -516,7 +516,7 @@ function platform_tinker() {
 }
 
 function platform_x86() {
-    __default_cpu_flags="-march=native"
+    __default_cpu_flags="-march=x86-64"
     __platform_flags+=(gl)
     if [[ "$__has_kms" -eq 1 ]]; then
         __platform_flags+=(kms)
